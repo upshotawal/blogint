@@ -51,12 +51,12 @@ while itemTargetCount > len(items):
         })
         des = desc
 
-        readtime = element.find_element(
-            By.XPATH, "//span[@class='playground-read-time-text']").text
-        rtime.append({
-            readtime: readtime()
-        })
-        rt = rtime
+        # readtime = element.find_element(
+        #     By.XPATH, "//span[@class='playground-read-time-text']").text
+        # rtime.append({
+        #     readtime: readtime()
+        # })
+        # rt = rtime
 
         # designation= element.find_element(By.XPATH,'//*[@id="post-836"]/div/div/section[2]/div/div/div/div/div/div/div[1]/div[2]/div[1]/div/div[2]/div[2]/div[2]/div[1]').text
         # desig.append({
