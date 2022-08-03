@@ -3,10 +3,10 @@
 <div class="container">
   <br/>
   <form class="d-flex">
-      <input class="form-control me-2" input name="q" type="search" placeholder="Search for the related product on categories" aria-label="Search">
+      <input class="form-control me-2" input name="q" type="search" placeholder="Search for the Blogs you want" aria-label="Search">
       <button class="btn btn-outline-success" type="submit">Search</button>
   </form>
-  
+  <br/>
 
   <!-- Card deck -->
   
@@ -23,7 +23,7 @@
     
         <!--Card image-->
         <div class="view overlay">
-          <img class="card-img-top" src={{b.image.url}} alt="Card image cap">
+          <img class="card-img-top" src={{b.image}} alt="Card image cap">
           <a href="#!">
             <div class="mask rgba-white-slight"></div>
           </a>
@@ -35,16 +35,10 @@
           <!--Title-->
           <h4 class="card-title">{{b.title}}</h4>
           <!--Text-->
-          <p class="card-text">{{b.decription}}</p>
-          <div class="badge bg-primary text-wrap" style="width: 12rem;">
-            {{b.authname}}
-          </div>
-          <div class="badge bg-primary text-wrap" style="width: 12rem;">
-            {{b.designation}}
-          </div>
-          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-          <button type="button" class="btn btn-light-blue btn-md">{{b.readtiem}}</button>
-    
+         
+          
+          <button type="button" class="btn btn-danger"><a href="{% url 'blog-detail' b.slug %}">View</a></button>
+     
         </div>
         
     

@@ -1,0 +1,18 @@
+{% extends 'blogs/base.html' %} {% load static %} {% block content %}
+
+<div class="container">
+<h1> UPDATE BLOGS </h1>
+<br/>
+<form action="" method=POST>
+    {% csrf_token %}
+    {{form.as_p}}
+    <br/>
+   <input type="submit"value="Update"
+    class="btn btn-secondary">
+
+<br/>
+</div>
+
+
+
+{% endblock%}
